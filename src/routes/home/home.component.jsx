@@ -41,7 +41,7 @@ const Home = () => {
       try {
         const response = await fetch("https://api.escuelajs.co/api/v1/categories");
      const data = await response.json()
-     setCategories(data)
+     setCategories(data.slice(0, 5))
       } catch (error) {
         console.error(error.message)
       }

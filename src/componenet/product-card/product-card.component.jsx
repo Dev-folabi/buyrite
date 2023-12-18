@@ -3,10 +3,11 @@ import "./product-card.styles.scss";
 import Button from "../button/button.componenet";
 
 const ProductCard = ({ products }) => {
-  const { title, price } = products;
-  const { image } = products.category;
+  const { title, price, images } = products;
+  const image = images[0]
   return (
     <div className="product-card-container">
+  
       <img src={image} alt={`${title}`} />
       <div className="footer">
         <span className="name">{title}</span>
