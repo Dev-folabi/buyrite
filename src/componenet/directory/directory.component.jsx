@@ -2,6 +2,9 @@
     import "./directory.styles.css";
 
     const Directory = ({categories}) =>{
+if(categories === null){
+    return <p>loading...</p>
+}
 
         return(
     <div className="directory-container">
