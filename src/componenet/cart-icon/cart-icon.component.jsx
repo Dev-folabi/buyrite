@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { CartContext } from "../../contexts/cart-context";
 import "./cart-icon.styles.scss";
 
@@ -6,7 +6,7 @@ import { ReactComponent as ShoppingIcon } from "../../assests/shopping-bag.svg";
 
 const CartIcon = () => {
   const { isCartOpen, setIsCartOpen } = useContext(CartContext);
-// const [onHover, setOnHover] = useState(false)
+
   const cartToggle = () => setIsCartOpen(!isCartOpen); 
 
   const mouseHoverd = ()=>{
