@@ -9,6 +9,7 @@ import "./navigation.styles.css";
 import { signOutUser } from "../../utils/firebase/firebase.utils";
 
 
+
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
 const { isCartOpen } = useContext(CartContext);
@@ -39,6 +40,7 @@ const { isCartOpen } = useContext(CartContext);
         </div>
         {isCartOpen && <CartDropdown />}
       </div>
+      
       <Outlet />
     </Fragment>
   );
